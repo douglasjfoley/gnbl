@@ -61,7 +61,7 @@ Copy `.env.example` to `.env.local` for local overrides. On Vercel set `RESEND_A
 | Division formats, field sizes, fees | `content/data/divisions.json` (blank fee renders "Fee to be announced") |
 | Sponsors | `content/data/sponsors.json`; logos go in `public/brand/sponsors/{tier}/` named by the `logo` value |
 | Tridents teams, check-in windows, what to bring, FAQ | `content/data/tridents.json` |
-| Registration portal, social links, training and bylaw links, Shop | `content/data/site.json` (`shop.enabled: true` plus a `url` shows Shop in the nav and footer) |
+| Registration platform name and portal URL (`registration.platform`, `registration.portal`), social links, training and bylaw links, Shop | `content/data/site.json` (`shop.enabled: true` plus a `url` shows Shop in the nav and footer) |
 | Policies page | `content/pages/policies.mdx` |
 | News | add `content/news/YYYY-MM-slug.mdx` with `title`, `date`, `excerpt`, `image` frontmatter |
 

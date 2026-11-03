@@ -124,7 +124,7 @@ export default function TridentsHome() {
               Tryout details
             </Button>
             <Button href={site.registration.portal} variant="secondary">
-              Register for tryouts (Stack Sports)
+              Register for tryouts ({site.registration.platform})
             </Button>
           </div>
         </SplitFeature>

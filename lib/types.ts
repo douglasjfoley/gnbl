@@ -9,7 +9,7 @@ export type Site = {
     string
   >;
   social: { facebook: string; instagram: string };
-  registration: { portal: string; stackSportsPortalId: string };
+  registration: { platform: string; portal: string; stackSportsPortalId: string };
   affiliations: string[];
   boardMeeting: string;
   shop: { enabled: boolean; url: string };

@@ -21,7 +21,7 @@ export default function RegisterPage() {
       : "Registration dates will be announced here and by email.";
 
   const steps = [
-    ["Confirmation email", "Stack Sports emails a confirmation as soon as you finish."],
+    ["Confirmation email", `${site.registration.platform} emails a confirmation as soon as you finish.`],
     ["Tryout or draft date", "Mustang and up hold tryouts, then a draft. Pinto is auto-drafted. Fawn and Shetland are placed on teams."],
     ["Coach contact", "Your coach reaches out once teams are set."],
     ["Uniform pickup", "Your division director shares the pickup date and place."],
@@ -35,7 +35,7 @@ export default function RegisterPage() {
           {window} League age is your player&rsquo;s age on {fullDate(dates.leagueAgeDate)}.
         </p>
         <p className="mt-3 text-muted">
-          Registration runs through Stack Sports. You&rsquo;ll be asked to sign in or create a free account there, so
+          Registration runs through {site.registration.platform}. You&rsquo;ll be asked to sign in or create a free account there, so
           here is everything you need to know first.
         </p>
       </PageHeader>
@@ -93,7 +93,7 @@ export default function RegisterPage() {
         <Card className="text-center">
           <h2 className="t-h2">Ready to register?</h2>
           <div className="mt-6">
-            <Button href={site.registration.portal}>Continue to registration (Stack Sports)</Button>
+            <Button href={site.registration.portal}>Continue to registration ({site.registration.platform})</Button>
           </div>
           <p className="mt-6 text-[15px] text-muted">
             Coaching or volunteering?{" "}

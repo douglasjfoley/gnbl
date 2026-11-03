@@ -23,7 +23,7 @@ export default function GetInvolvedPage() {
       d: (
         <>
           Sign up on{" "}
-          <a href={l.volunteerRegistration} className="font-semibold text-accent underline underline-offset-4">Stack Sports</a>, pick the
+          <a href={l.volunteerRegistration} className="font-semibold text-accent underline underline-offset-4">{site.registration.platform}</a>, pick the
           program, then the role. To be a Champions buddy, choose Champions, then Buddy Volunteer.
         </>
       ),

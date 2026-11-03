@@ -54,7 +54,7 @@ export default function TryoutsPage() {
           <h2 className="t-h3">How selection works</h2>
           <p className="mt-3 text-muted">{tri.selection}</p>
           <Button href={site.registration.portal} variant="tridents" className="mt-6">
-            Register for tryouts (Stack Sports)
+            Register for tryouts ({site.registration.platform})
           </Button>
         </Card>
       </Section>

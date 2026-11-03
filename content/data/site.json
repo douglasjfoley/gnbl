@@ -21,7 +21,8 @@
     "instagram": "https://www.instagram.com/gnbaseball"
   },
   "registration": {
-    "portal": "https://www.gnbaseball.com/Default.aspx?tabid=905424",
+    "platform": "Stack Sports",
+    "portal": "https://login.stacksports.com/login?client_id=612b0399b1854a002e427f78&redirect_uri=https://core-api.bluesombrero.com/login/redirect/portal/10784&app_name=Great+Neck+Baseball+League&portalid=10784&instancekey=leagues",
     "stackSportsPortalId": "10784"
   },
   "affiliations": [
@@ -34,7 +35,7 @@
     "url": ""
   },
   "links": {
-    "volunteerRegistration": "https://www.gnbaseball.com/Default.aspx?tabid=905424",
+    "volunteerRegistration": "https://login.stacksports.com/login?client_id=612b0399b1854a002e427f78&redirect_uri=https://core-api.bluesombrero.com/login/redirect/portal/10784&app_name=Great+Neck+Baseball+League&portalid=10784&instancekey=leagues",
     "backgroundCheck": "https://gnbl.quickapp.pro/apply/applicant/start",
     "naysBullying": "https://www.nays.org/bullying-prevention-training",
     "naysConcussion": "https://www.nays.org/concussion-training",
