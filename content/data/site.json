@@ -1,0 +1,36 @@
+{
+  "name": "Great Neck Baseball League",
+  "shortName": "Great Neck Baseball",
+  "tagline": "This is where Virginia Beach plays ball.",
+  "positioning": "A developmental, mission-driven league. From first swings, to All-Stars, to the Tridents, to Champions.",
+  "address": {
+    "fields": "2509 Shorehaven Drive, Virginia Beach, VA 23454",
+    "mail": "P.O. Box 3004, Virginia Beach, VA 23454"
+  },
+  "email": {
+    "secretary": "secretary@gnbaseball.org",
+    "president": "president@gnbaseball.org",
+    "registrar": "registrar@gnbaseball.org",
+    "volunteer": "volunteer@gnbaseball.org",
+    "sponsorship": "sponsorship@gnbaseball.org",
+    "champions": "champions@gnbaseball.org",
+    "tridents": "tridentsdirector@gnbaseball.org"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/greatneckbaseball",
+    "instagram": "https://www.instagram.com/gnbaseball"
+  },
+  "registration": {
+    "portal": "https://www.gnbaseball.com/Default.aspx?tabid=905424",
+    "stackSportsPortalId": "10784"
+  },
+  "affiliations": [
+    "PONY Baseball",
+    "501(c)(3) nonprofit"
+  ],
+  "boardMeeting": "Second Tuesday of each month, open to the public",
+  "shop": {
+    "enabled": false,
+    "url": ""
+  }
+}

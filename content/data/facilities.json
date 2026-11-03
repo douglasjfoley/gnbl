@@ -1,0 +1,59 @@
+{
+  "home": {
+    "name": "Great Neck Baseball Fields",
+    "address": "2509 Shorehaven Drive, Virginia Beach, VA 23454",
+    "directions": "Turn onto Shorehaven Drive from N. Great Neck Road, pass Cox High School, turn left into the Great Neck Baseball parking lot (the Recreation Center will be on your right).",
+    "fields": [
+      "Fawn Field 8",
+      "Shetland Field 7",
+      "Pinto Field 5",
+      "Pinto Field 6",
+      "Mustang 3",
+      "Mustang 4",
+      "Bronco 1",
+      "Pony 2"
+    ],
+    "amenities": [
+      "Batting cages",
+      "Concession stand",
+      "Lights",
+      "Parking lot",
+      "Cox overflow parking"
+    ],
+    "parking": "No parking at the Recreation Center at any time. Grass medians are tow-away. Weekend decal parking outside Bronco field is for umpires, coaches of record and board members only."
+  },
+  "partner": [
+    {
+      "name": "Oceana Park",
+      "fields": [
+        "Field 1",
+        "Field 2"
+      ]
+    },
+    {
+      "name": "London Bridge Park",
+      "fields": []
+    },
+    {
+      "name": "Great Neck Middle School",
+      "fields": [
+        "GNMS Baseball",
+        "GNMS Softball"
+      ]
+    },
+    {
+      "name": "Trantwood Elementary",
+      "fields": [
+        "Practice field"
+      ]
+    },
+    {
+      "name": "Linkhorn Park Elementary",
+      "fields": []
+    },
+    {
+      "name": "Cox HS Dome",
+      "fields": []
+    }
+  ]
+}

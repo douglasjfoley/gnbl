@@ -1,0 +1,75 @@
+{
+  "teams": [
+    {
+      "ageGroup": "8U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "9U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "10U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "11U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "12U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "13U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    },
+    {
+      "ageGroup": "14U",
+      "coach": "",
+      "coordinator": "",
+      "season": "",
+      "schedule": ""
+    }
+  ],
+  "checkIn": [
+    {
+      "lastNames": "A to H",
+      "window": ""
+    },
+    {
+      "lastNames": "I to P",
+      "window": ""
+    },
+    {
+      "lastNames": "Q to Z",
+      "window": ""
+    }
+  ],
+  "whatToBring": [
+    "Glove",
+    "Bat and helmet",
+    "Cleats and baseball pants",
+    "Water",
+    "Catcher's gear if you catch"
+  ],
+  "selection": "Coaches evaluate hitting, fielding, throwing and running at each station. How and when families hear back will be posted before tryouts."
+}

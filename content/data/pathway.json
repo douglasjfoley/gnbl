@@ -1,0 +1,57 @@
+[
+  {
+    "step": 1,
+    "id": "first-swings",
+    "title": "First swings",
+    "ages": "3-8",
+    "divisions": [
+      "Fawn",
+      "Shetland",
+      "Pinto"
+    ],
+    "copy": "Fall in love with the game. Soft balls, tees, coach pitch, no pressure.",
+    "image": "PATH-01"
+  },
+  {
+    "step": 2,
+    "id": "learn-to-compete",
+    "title": "Learn to compete",
+    "ages": "9-18",
+    "divisions": [
+      "Mustang",
+      "Bronco",
+      "Pony",
+      "Colt",
+      "Palomino"
+    ],
+    "copy": "Kid pitch, standings, drafted teams built for balance. We play to win.",
+    "image": "PATH-02"
+  },
+  {
+    "step": 3,
+    "id": "all-stars",
+    "title": "All-Stars",
+    "ages": "7-18",
+    "divisions": [],
+    "copy": "Every spring, every division fields an All-Star team for PONY sectional and state play.",
+    "image": "PATH-03"
+  },
+  {
+    "step": 4,
+    "id": "tridents",
+    "title": "The Tridents",
+    "ages": "8U-14U",
+    "divisions": [],
+    "copy": "Our Sunday select program and the highest level of play inside Great Neck. Built to move players up.",
+    "image": "PATH-04"
+  },
+  {
+    "step": 5,
+    "id": "next-step",
+    "title": "The next step",
+    "ages": "",
+    "divisions": [],
+    "copy": "Middle school, high school and true travel programs. We are the launch point, and proud of it.",
+    "image": null
+  }
+]
