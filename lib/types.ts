@@ -13,6 +13,17 @@ export type Site = {
   affiliations: string[];
   boardMeeting: string;
   shop: { enabled: boolean; url: string };
+  links: {
+    volunteerRegistration: string;
+    backgroundCheck: string;
+    naysBullying: string;
+    naysConcussion: string;
+    mandatedReporter: string;
+    bylaws: string;
+    playingRules: string;
+    allStarPolicy: string;
+    venmo: string;
+  };
 };
 
 export type PathwayStep = {

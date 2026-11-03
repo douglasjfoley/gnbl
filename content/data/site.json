@@ -32,5 +32,16 @@
   "shop": {
     "enabled": false,
     "url": ""
+  },
+  "links": {
+    "volunteerRegistration": "https://www.gnbaseball.com/Default.aspx?tabid=905424",
+    "backgroundCheck": "https://gnbl.quickapp.pro/apply/applicant/start",
+    "naysBullying": "https://www.nays.org/bullying-prevention-training",
+    "naysConcussion": "https://www.nays.org/concussion-training",
+    "mandatedReporter": "https://www.dss.virginia.gov/family/cps/mandated_reporters/cwse5692/story.html",
+    "bylaws": "https://dt5602vnjxv0c.cloudfront.net/portals/10784/docs/gnbl%20by-laws%202026%20approved%2010%20feb%202026.docx",
+    "playingRules": "https://dt5602vnjxv0c.cloudfront.net/portals/10784/docs/great%20neck%20baseball%20league%20rules%20and%20regulations%2022%20jan%202026%20v3.docx",
+    "allStarPolicy": "https://dt5602vnjxv0c.cloudfront.net/portals/10784/docs/2026%20all%20stars%20team%20selection%20process%20and%20information.docx",
+    "venmo": ""
   }
 }
