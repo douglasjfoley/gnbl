@@ -48,6 +48,9 @@ export default function TridentsHome() {
 
       <Section>
         <SectionHead eyebrow="What we do" title="Develop. Compete. Move up." eyebrowClass="text-columbia-lt" />
+        <div className="mb-6 overflow-hidden rounded-2xl">
+          <ImageSlot id="TRI-01" alt="A coach at the fence pointing to the field while a player listens" aspect="2/1" tone="navy" sizes="(max-width: 1180px) 100vw, 1180px" />
+        </div>
         <Pillars />
       </Section>
 

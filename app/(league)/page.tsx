@@ -54,7 +54,7 @@ export default function Home() {
       <ProofBar divisions={getDivisions().length} />
 
       <Section id="pathway">
-        <SectionHead eyebrow="The pathway" title="A developmental, mission-driven league." lead={site.positioning} />
+        <SectionHead eyebrow="The pathway" title="From first swings to the next step." lead={site.positioning} />
         <Pathway steps={getPathway()} />
         <p className="mt-8 font-display text-xl font-bold md:text-2xl">
           We don&rsquo;t need to be the destination to be the launch point.

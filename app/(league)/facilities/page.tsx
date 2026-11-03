@@ -76,11 +76,13 @@ export default function FacilitiesPage() {
         </div>
       </Section>
 
-      <section aria-label="Photos of the complex" className="wrap grid gap-4 pb-14 md:grid-cols-3 md:pb-24">
+      <section aria-label="Photos of the complex" className="wrap grid gap-4 pb-14 sm:grid-cols-2 md:grid-cols-6 md:pb-24 [&>*:nth-child(-n+3)]:md:col-span-2 [&>*:nth-child(n+4)]:md:col-span-3">
         {[
           ["FAC-02", "The Bronco field from behind home plate"],
           ["FAC-03", "The batting cages"],
           ["FAC-05", "Field lights on at dusk"],
+          ["FAC-04", "The concession stand window"],
+          ["FAC-06", "Families walking in from the parking lot"],
         ].map(([id, alt]) => (
           <div key={id} className="overflow-hidden rounded-2xl">
             <ImageSlot id={id} alt={alt} aspect="4/3" sizes="(max-width: 768px) 100vw, 33vw" />

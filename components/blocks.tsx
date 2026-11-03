@@ -218,7 +218,7 @@ export function SponsorGrid({ data, tiers }: { data: Sponsors; tiers?: Sponsors[
         return (
           <div key={t.id}>
             <h3 className="eyebrow mb-3 text-muted">
-              {t.name} sponsors <span className="opacity-70">({list.length})</span>
+              {t.name} sponsors ({list.length})
             </h3>
             <ul className={`grid gap-2.5 ${big ? "grid-cols-2 md:grid-cols-3 lg:grid-cols-6" : "grid-cols-2 md:grid-cols-4 lg:grid-cols-6"}`}>
               {list.map((s) => {

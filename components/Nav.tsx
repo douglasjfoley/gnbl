@@ -54,7 +54,8 @@ export function Nav() {
       brand={
         <Link href="/" className="flex min-w-0 items-center gap-3 font-display text-[17px] font-extrabold tracking-tight">
           <Mark name="gn-crest" size={42} priority alt="" />
-          <span className="truncate">Great Neck Baseball</span>
+          <span className="hidden truncate sm:inline">Great Neck Baseball</span>
+          <span className="sr-only sm:hidden">Great Neck Baseball, home</span>
         </Link>
       }
       cta={

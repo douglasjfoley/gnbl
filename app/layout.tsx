@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         {children}
-        <Analytics />
+        {process.env.VERCEL && <Analytics />}
       </body>
     </html>
   );
