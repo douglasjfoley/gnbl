@@ -21,6 +21,7 @@
   --columbia-lt: #9fcbef;
   --gold: #f2a63a;
   --white: #ffffff;
+  --go: #4fd17c;
   --tri-navy: #0b1a33;
   --tri-columbia: #5b9bd5;
 
@@ -90,6 +91,7 @@
   --color-primary-hover: var(--primary-hover);
   --color-on-primary: var(--on-primary);
   --color-red: var(--red);
+  --color-go: var(--go);
   --color-red-dk: var(--red-dk);
   --color-navy: var(--navy);
   --color-navy-mid: var(--navy-mid);
