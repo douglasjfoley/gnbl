@@ -55,7 +55,7 @@ export default function ChampionsPage() {
           </div>
           <div id="buddies" className="min-w-0 scroll-mt-24">
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="CHAMP-02" alt="A player swinging a bat while a buddy holds the tee steady" aspect="4/3" fallback={<PanelStat value="1 hr" label="Every Saturday, no score kept" />} />
+              <ImageSlot id="CHAMP-02" alt="A player swinging a bat while a buddy holds the tee steady" aspect="4/3" panel={<PanelStat value="1 hr" label="Every Saturday, no score kept" />} />
             </div>
             <h2 className="t-h3 mt-6">The buddy program</h2>
             <p className="mt-3 text-muted">
@@ -75,7 +75,7 @@ export default function ChampionsPage() {
           reverse
           media={
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="CHAMP-03" alt="Two Tridents players high-fiving a young Champions player" aspect="4/3" fallback={<PanelStat value="52" label="Saturdays a year with a Tridents team" />} />
+              <ImageSlot id="CHAMP-03" alt="Two Tridents players high-fiving a young Champions player" aspect="4/3" panel={<PanelStat value="52" label="Saturdays a year with a Tridents team" />} />
             </div>
           }
         >

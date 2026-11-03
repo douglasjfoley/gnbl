@@ -49,7 +49,7 @@ export default function TridentsHome() {
       <Section>
         <SectionHead eyebrow="What we do" title="Develop. Compete. Move up." eyebrowClass="text-columbia-lt" />
         <div className="mb-6 overflow-hidden rounded-[22px]">
-          <ImageSlot id="TRI-01" alt="A coach at the fence pointing to the field while a player listens" aspect="2/1" sizes="(max-width: 1280px) 100vw, 1280px" fallback={<p className="max-w-[20ch] font-display text-[clamp(28px,3.6vw,52px)] leading-[1.05] font-extrabold tracking-tight">We don&rsquo;t need to be the destination to be the launch point.</p>} />
+          <ImageSlot id="TRI-01" alt="A coach at the fence pointing to the field while a player listens" aspect="2/1" sizes="(max-width: 1280px) 100vw, 1280px" panel={<p className="max-w-[20ch] font-display text-[clamp(28px,3.6vw,52px)] leading-[1.05] font-extrabold tracking-tight">We don&rsquo;t need to be the destination to be the launch point.</p>} />
         </div>
         <Pillars />
       </Section>
@@ -79,7 +79,7 @@ export default function TridentsHome() {
         <SplitFeature
           media={
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="TRI-02" alt="A Tridents team huddle from above" aspect="4/3" fallback={<PanelStat value="7" label="Teams, 8U to 14U" />} />
+              <ImageSlot id="TRI-02" alt="A Tridents team huddle from above" aspect="4/3" panel={<PanelStat value="7" label="Teams, 8U to 14U" />} />
             </div>
           }
         >
@@ -108,7 +108,7 @@ export default function TridentsHome() {
           reverse
           media={
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="TRI-03" alt="Players waiting their turn at a tryout station" aspect="4/3" fallback={<PanelStat value="8U–14U" label="Tryouts every season" />} />
+              <ImageSlot id="TRI-03" alt="Players waiting their turn at a tryout station" aspect="4/3" panel={<PanelStat value="8U–14U" label="Tryouts every season" />} />
             </div>
           }
         >
@@ -134,7 +134,7 @@ export default function TridentsHome() {
         <SplitFeature
           media={
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="CHAMP-03" alt="Tridents players high-fiving a Champions player" aspect="4/3" fallback={<PanelStat value="52" label="Saturdays a year at Champions" />} />
+              <ImageSlot id="CHAMP-03" alt="Tridents players high-fiving a Champions player" aspect="4/3" panel={<PanelStat value="52" label="Saturdays a year at Champions" />} />
             </div>
           }
         >
@@ -182,7 +182,7 @@ export default function TridentsHome() {
           </div>
           <div className="min-w-0">
             <div className="overflow-hidden rounded-[22px]">
-              <ImageSlot id="TRI-05" alt="A player walking off the field toward high school lights" aspect="4/3" fallback={<PanelStat value="Next" label="Middle school, high school, true travel" />} />
+              <ImageSlot id="TRI-05" alt="A player walking off the field toward high school lights" aspect="4/3" panel={<PanelStat value="Next" label="Middle school, high school, true travel" />} />
             </div>
             <h2 className="t-h3 mt-6">The next step</h2>
             <p className="mt-2 text-muted">

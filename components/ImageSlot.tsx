@@ -23,8 +23,10 @@ type Props = {
   /** Empty-slot treatment: a navy brand panel (default) or a cream field. */
   tone?: "navy" | "cream";
   sizes?: string;
-  /** Large type shown on the empty panel until the photo lands. */
-  fallback?: ReactNode;
+  /** Another shot ID (e.g. "HOME-01-alt") used only when `id` has no file. */
+  fallback?: string;
+  /** Large type shown on the empty panel until a photo lands. */
+  panel?: ReactNode;
 };
 
 /**
@@ -41,21 +43,23 @@ export function ImageSlot({
   tone = "navy",
   sizes = "(max-width: 768px) 100vw, 50vw",
   fallback,
+  panel,
 }: Props) {
-  const file = findImage(id);
+  const primary = findImage(id);
+  const file = primary ?? (fallback ? findImage(fallback) : null);
   const src = file && versioned(file);
   const box = aspect === "fill" ? "absolute inset-0" : `relative w-full ${ASPECT[aspect]}`;
   const empty = tone === "navy" ? "panel" : "bg-surface";
   const showId = process.env.NEXT_PUBLIC_SHOW_SLOT_IDS === "true";
 
   return (
-    <div className={`${box} overflow-hidden ${src ? "bg-navy" : empty} ${className}`} data-slot={id} data-slot-filled={src ? "true" : "false"}>
+    <div className={`${box} overflow-hidden ${src ? "bg-navy" : empty} ${className}`} data-slot={id} data-slot-filled={primary ? "true" : file ? "fallback" : "false"}>
       {src ? (
         <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className="object-cover" />
       ) : (
         <>
           <span className="sr-only">{alt}</span>
-          {fallback && <div className="absolute inset-0 flex flex-col justify-end p-[clamp(20px,4%,36px)]">{fallback}</div>}
+          {panel && <div className="absolute inset-0 flex flex-col justify-end p-[clamp(20px,4%,36px)]">{panel}</div>}
           {showId && (
             <span
               className={`absolute top-3 right-3 rounded-md px-1.5 py-0.5 font-mono text-[11px] tracking-wide ${
@@ -71,7 +75,7 @@ export function ImageSlot({
   );
 }
 
-/** Big-number fallback: "8" over "fields at our home complex". */
+/** Big-number panel: "8" over "fields at our home complex". */
 export function PanelStat({ value, label }: { value: string; label: string }) {
   return (
     <div>

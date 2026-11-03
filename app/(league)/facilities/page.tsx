@@ -34,7 +34,7 @@ export default function FacilitiesPage() {
 
   return (
     <>
-      <ImageHero id="FAC-01" alt="Aerial view of the eight-field Great Neck complex">
+      <ImageHero id="FAC-01" fallback="HOME-01-alt" alt="Aerial view of the Great Neck complex">
         <Eyebrow className="mb-4 text-amber">Facilities</Eyebrow>
         <h1 className="t-display">Our home field</h1>
         <p className="mt-4 text-xl text-white/95">{fac.home.address}</p>

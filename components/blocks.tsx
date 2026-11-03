@@ -81,7 +81,7 @@ export function Pathway({ steps, compact }: { steps: PathwayStep[]; compact?: bo
                 alt={s.title}
                 aspect="4/3"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
-                fallback={<span className="stat text-[64px] text-white/90">{num}</span>}
+                panel={<span className="stat text-[64px] text-white/90">{num}</span>}
               />
             ) : (
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -127,7 +127,7 @@ export function DivisionCard({ d, detailed }: { d: Division; detailed?: boolean 
         alt={`${d.name} division`}
         aspect="3/2"
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-        fallback={<span className="stat text-[48px] text-white/90">{range(d.ages)}</span>}
+        panel={<span className="stat text-[48px] text-white/90">{range(d.ages)}</span>}
       />
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-baseline justify-between gap-3">

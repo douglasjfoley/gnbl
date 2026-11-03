@@ -31,7 +31,7 @@ export default function Home() {
       <VideoHero id="HOME-V01">
         <div className="wrap pt-36 pb-[clamp(56px,7vw,96px)]">
           <div className="max-w-[920px]">
-            <Eyebrow className="text-amber">Virginia Beach · PONY Baseball · 501(c)(3)</Eyebrow>
+            <Eyebrow className="text-white">Virginia Beach · PONY Baseball · 501(c)(3)</Eyebrow>
             <h1 className="t-display mt-6 max-w-[13ch]">{site.tagline}</h1>
             <p className="t-lead mt-7 max-w-[54ch] text-white/90">
               A developmental, mission-driven league for ages 3 to 18 on our own fields at Great Neck. From first swings, to
@@ -85,7 +85,7 @@ export default function Home() {
                 id="HOME-01"
                 alt="The Great Neck Baseball League complex at golden hour"
                 aspect="4/3"
-                fallback={<PanelStat value="8" label="Fields at 2509 Shorehaven Drive" />}
+                panel={<PanelStat value="8" label="Fields at 2509 Shorehaven Drive" />}
               />
               <StatusChip status={dates.fieldStatus} detail="updated today" className="absolute top-5 left-5" />
             </Media>
@@ -118,7 +118,7 @@ export default function Home() {
                 id="HOME-02"
                 alt="A Champions buddy guiding a player toward first base"
                 aspect="4/3"
-                fallback={<PanelStat value="4–23" label="Ages, every Saturday" />}
+                panel={<PanelStat value="4–23" label="Ages, every Saturday" />}
               />
             </Media>
           }

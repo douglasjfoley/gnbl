@@ -102,7 +102,7 @@ export default function GetInvolvedPage() {
             </ul>
           </div>
           <Media className="self-start lg:col-span-5">
-            <ImageSlot id="INV-02" alt="Sponsor banners along the outfield fence" aspect="4/3" fallback={<PanelStat value={String(sponsors.sponsors.length)} label="Local businesses behind the league" />} />
+            <ImageSlot id="INV-02" alt="Sponsor banners along the outfield fence" aspect="4/3" panel={<PanelStat value={String(sponsors.sponsors.length)} label="Local businesses behind the league" />} />
           </Media>
         </div>
       </Section>

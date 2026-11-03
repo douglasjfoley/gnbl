@@ -74,17 +74,20 @@ export default function ProgramsPage() {
               pathway after rec ball.
             </p>
           </Card>
-          <Card>
-            <Eyebrow className="mb-3">Champions</Eyebrow>
-            <h2 className="t-h3">Every kid plays here.</h2>
-            <p className="mt-3 text-muted">Our adaptive division for ages 4 to 23, every Saturday, with buddies on the base paths.</p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Button href="/register">Register</Button>
-              <Button href="/champions" variant="secondary">
-                About Champions
-              </Button>
+          <article className="card overflow-hidden">
+            <ImageSlot id="CHAMP-01" alt="Champions players and buddies with their arms around each other" aspect="2/1" />
+            <div className="p-7 md:p-8">
+              <Eyebrow className="mb-3">Champions</Eyebrow>
+              <h2 className="t-h3">Every kid plays here.</h2>
+              <p className="mt-3 text-muted">Our adaptive division for ages 4 to 23, every Saturday, with buddies on the base paths.</p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button href="/register">Register</Button>
+                <Button href="/champions" variant="secondary">
+                  About Champions
+                </Button>
+              </div>
             </div>
-          </Card>
+          </article>
         </div>
       </Section>
     </>

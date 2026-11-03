@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
-import { findVideo } from "@/lib/assets";
+import { findVideo, versioned } from "@/lib/assets";
 import { AmbientDust } from "./AmbientDust";
 
 type Props = {
@@ -16,6 +16,7 @@ type Props = {
  */
 export function VideoHero({ id, children, className = "" }: Props) {
   const v = findVideo(id);
+  const poster = v.poster && versioned(v.poster);
   const hasVideo = Boolean(v.mp4 || v.webm);
   const showId = process.env.NEXT_PUBLIC_SHOW_SLOT_IDS === "true";
 
@@ -25,8 +26,8 @@ export function VideoHero({ id, children, className = "" }: Props) {
       data-slot={id}
       data-slot-filled={hasVideo || v.poster ? "true" : "false"}
     >
-      {v.poster ? (
-        <Image src={v.poster} alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
+      {poster ? (
+        <Image src={poster} alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
       ) : (
         <AmbientDust />
       )}
@@ -38,7 +39,7 @@ export function VideoHero({ id, children, className = "" }: Props) {
           loop
           playsInline
           preload="metadata"
-          poster={v.poster ?? undefined}
+          poster={poster ?? undefined}
           aria-hidden="true"
         >
           {v.mobile && <source src={v.mobile} type="video/mp4" media="(max-width: 768px)" />}

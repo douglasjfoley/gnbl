@@ -2,19 +2,20 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { matchesShot } from "./shots";
 
 // Build-time file lookup for shot-ID images, hero videos and brand marks.
 // Runs on the server only; pages are static, so a new file is picked up on
 // the next build with no code change.
 
 const PUBLIC = path.join(process.cwd(), "public");
-const IMAGE_EXT = /\.(jpe?g|png|webp|avif)$/i;
 
 function walk(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return (fs.readdirSync(dir, { recursive: true }) as string[])
     .map((f) => f.split(path.sep).join("/"))
-    .filter((f) => !f.split("/").pop()!.startsWith("."));
+    .filter((f) => !f.split("/").pop()!.startsWith("."))
+    .sort();
 }
 
 let imageCache: string[] | null = null;
@@ -24,12 +25,12 @@ const videos = () => (videoCache ??= walk(path.join(PUBLIC, "video")));
 
 const base = (f: string) => f.split("/").pop()!;
 
-/** public/images/**\/{id}-*.{jpg,jpeg,png,webp,avif} → "/images/…", or null. */
+/**
+ * public/images/**\/{id}-*.{jpg,jpeg,png,webp,avif} → "/images/…", or null.
+ * `{id}-alt-*` spares are skipped; pass "{id}-alt" to get one on purpose.
+ */
 export function findImage(id: string): string | null {
-  const hit = images().find((f) => {
-    const b = base(f);
-    return IMAGE_EXT.test(b) && (b.startsWith(`${id}-`) || b.replace(IMAGE_EXT, "") === id);
-  });
+  const hit = images().find((f) => matchesShot(base(f), id));
   return hit ? `/images/${hit}` : null;
 }
 
