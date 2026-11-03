@@ -71,5 +71,31 @@
     "Water",
     "Catcher's gear if you catch"
   ],
-  "selection": "Coaches evaluate hitting, fielding, throwing and running at each station. How and when families hear back will be posted before tryouts."
+  "selection": "Coaches evaluate hitting, fielding, throwing and running at each station. How and when families hear back will be posted before tryouts.",
+  "faq": [
+    {
+      "q": "What does it cost?",
+      "a": "The season fee is posted here with tryout details each year."
+    },
+    {
+      "q": "How much time does it take?",
+      "a": "Games are on Sundays. Each team's coach sets the practice schedule and shares it before the season starts."
+    },
+    {
+      "q": "How much travel is involved?",
+      "a": "Some travel should be expected for tournaments. The Tridents are not a true travel team, by design: we play within PONY's rules and scope."
+    },
+    {
+      "q": "What about uniforms?",
+      "a": "Uniform details and ordering come with your team's welcome email."
+    },
+    {
+      "q": "Can my player still play rec ball?",
+      "a": "Yes. The Tridents play on Sundays so players can stay with their Great Neck rec team. Rec is the foundation, not something to leave behind."
+    },
+    {
+      "q": "How does it fit with All-Stars?",
+      "a": "Players can do both. Talk with your team's coordinator about the spring schedule."
+    }
+  ]
 }

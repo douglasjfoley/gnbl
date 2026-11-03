@@ -83,6 +83,7 @@ export type Tridents = {
   checkIn: { lastNames: string; window: string }[];
   whatToBring: string[];
   selection: string;
+  faq: { q: string; a: string }[];
 };
 
 export type PostMeta = {
