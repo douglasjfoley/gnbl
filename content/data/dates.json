@@ -1,0 +1,29 @@
+{
+  "season": "Spring 2027",
+  "leagueAgeDate": "2027-04-30",
+  "registrationOpens": "",
+  "registrationCloses": "",
+  "tryouts": [
+    {
+      "division": "Pinto",
+      "date": "",
+      "note": "Pinto is auto-drafted, no tryouts"
+    },
+    {
+      "division": "Mustang",
+      "date": ""
+    },
+    {
+      "division": "Bronco",
+      "date": ""
+    },
+    {
+      "division": "Pony",
+      "date": ""
+    }
+  ],
+  "openingDay": "",
+  "battleOfTheBeach": "Summer 2027",
+  "nextBoardMeeting": "2026-11-10",
+  "fieldStatus": "open"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "role": "President",
+    "name": "",
+    "email": "president@gnbaseball.org"
+  },
+  {
+    "role": "1st Vice President",
+    "name": "Dave Mellott",
+    "email": "1stvp@gnbaseball.org"
+  },
+  {
+    "role": "2nd Vice President",
+    "name": "David Kringle",
+    "email": "2ndvp@gnbaseball.org"
+  },
+  {
+    "role": "Secretary",
+    "name": "Katy Wade",
+    "email": "secretary@gnbaseball.org"
+  },
+  {
+    "role": "Treasurer",
+    "name": "Chris Wood",
+    "email": "treasurer@gnbaseball.org"
+  },
+  {
+    "role": "Sponsorship",
+    "name": "Erika Dorrman",
+    "email": "sponsorship@gnbaseball.org"
+  },
+  {
+    "role": "Registrar",
+    "name": "Krista Sheets",
+    "email": "registrar@gnbaseball.org"
+  },
+  {
+    "role": "League Mom Coordinator",
+    "name": "Tracy White",
+    "email": "leaguemom@gnbaseball.org",
+    "assistant": "Sarah Owens"
+  },
+  {
+    "role": "Webmaster / Social Media",
+    "name": "Doug Foley",
+    "email": "webmaster@gnbaseball.org"
+  },
+  {
+    "role": "Tournament Director",
+    "name": "Luke Sigler",
+    "email": "tournament@gnbaseball.org"
+  },
+  {
+    "role": "Concessions Director",
+    "name": "Kyle Payne",
+    "email": "concessions@gnbaseball.org",
+    "assistant": "Dave Mellott"
+  },
+  {
+    "role": "Volunteer Director",
+    "name": "Mike Campbell",
+    "email": "volunteer@gnbaseball.org"
+  },
+  {
+    "role": "Field Director",
+    "name": "James Abruzzo",
+    "email": "fielddirector@gnbaseball.org"
+  },
+  {
+    "role": "City Liaison",
+    "name": "Alex Olson",
+    "email": "alexolson@gnbaseball.org"
+  },
+  {
+    "role": "Pony / Colt / Palomino Director",
+    "name": "Mark Kennedy",
+    "email": "pony@gnbaseball.org"
+  },
+  {
+    "role": "Bronco Director",
+    "name": "Walt Wilhelm",
+    "email": "bronco@gnbaseball.org",
+    "assistant": ""
+  },
+  {
+    "role": "Mustang Director",
+    "name": "Mark Zdelar",
+    "email": "mustang@gnbaseball.org",
+    "assistant": "Tiffany Reeves"
+  },
+  {
+    "role": "Pinto Director",
+    "name": "Aaron Burkart",
+    "email": "pinto@gnbaseball.org",
+    "assistant": ""
+  },
+  {
+    "role": "Shetland / Fawn Director",
+    "name": "Shannon Kringle",
+    "email": "shetland@gnbaseball.org",
+    "assistant": "Patrick Moresco"
+  },
+  {
+    "role": "Champions Director",
+    "name": "Angelica Schulman",
+    "email": "champions@gnbaseball.org",
+    "assistant": "Christine Ross"
+  },
+  {
+    "role": "Tridents Director",
+    "name": "Jeff Powell",
+    "email": "tridentsdirector@gnbaseball.org"
+  }
+]

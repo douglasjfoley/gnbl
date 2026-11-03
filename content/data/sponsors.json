@@ -1,0 +1,251 @@
+{
+  "tiers": [
+    {
+      "id": "corporate",
+      "name": "Corporate",
+      "benefits": []
+    },
+    {
+      "id": "division",
+      "name": "Division",
+      "benefits": []
+    },
+    {
+      "id": "field",
+      "name": "Field",
+      "benefits": []
+    },
+    {
+      "id": "website",
+      "name": "Website",
+      "benefits": []
+    }
+  ],
+  "sponsors": [
+    {
+      "tier": "corporate",
+      "name": "Atlantic Bay Mortgage",
+      "logo": ""
+    },
+    {
+      "tier": "corporate",
+      "name": "Chick-fil-A Marketplace at Hilltop",
+      "logo": ""
+    },
+    {
+      "tier": "corporate",
+      "name": "D-BAT Virginia Beach",
+      "logo": ""
+    },
+    {
+      "tier": "corporate",
+      "name": "RK Auto",
+      "logo": ""
+    },
+    {
+      "tier": "corporate",
+      "name": "Priority Lexus of Virginia Beach",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "Cape Henry Collegiate",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "DICK'S Sporting Goods",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "VB Friends School",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "Potters Self Storage",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "The Firm for Men, Swango Law PC",
+      "logo": ""
+    },
+    {
+      "tier": "division",
+      "name": "Veterans United Foundation",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Atlantis Pools",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "American Classic Storage",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Ameritribe",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Cinema Cafe",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Coastal Cosmetic and Implant Dentistry",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Cottrell Contracting Corp.",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "CV International Inc.",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Decker Law",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Downs Dental Care",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "GET Solutions Inc.",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Gilco Transport Services",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Great Clips",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Home Instead",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Huffman and Huffman",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Jean Johnson Realty",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Jimmy Johns",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Klar Voorhees Hawkins Orthodontics",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Incredible Supply",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "McCormack & McCormack",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Moe's Southwest Grill",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Mosquito Joe",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Onyx Realty Professionals",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "Premiere Landscape",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "The Therapy Network",
+      "logo": ""
+    },
+    {
+      "tier": "field",
+      "name": "VB Physical Therapy & Wellness",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Metro Used Auto Parts",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Coastal Virginia Piping Systems",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Fox Pest Control",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "DSG Construction",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Bin There Dump That",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Adobe Express",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Zen Business",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "Tidewater Allergy and Asthma",
+      "logo": ""
+    },
+    {
+      "tier": "website",
+      "name": "BruteForce Stump Co",
+      "logo": ""
+    }
+  ]
+}

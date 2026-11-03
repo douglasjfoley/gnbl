@@ -1,0 +1,93 @@
+[
+  {
+    "id": "fawn",
+    "name": "Fawn",
+    "ages": "3-4",
+    "format": "Tee ball, soft ball, no outs or score",
+    "bases": null,
+    "mound": null,
+    "tryouts": false,
+    "image": "PROG-01"
+  },
+  {
+    "id": "shetland",
+    "name": "Shetland",
+    "ages": "5-6",
+    "format": "Tee ball, learning the bases",
+    "bases": null,
+    "mound": null,
+    "tryouts": false,
+    "image": "PROG-02"
+  },
+  {
+    "id": "pinto",
+    "name": "Pinto",
+    "ages": "7-8",
+    "format": "Coach pitch, drafted teams, standings kept",
+    "bases": "60 ft",
+    "mound": "38 ft",
+    "tryouts": false,
+    "note": "Auto-drafted, no tryouts",
+    "image": "PROG-03"
+  },
+  {
+    "id": "mustang",
+    "name": "Mustang",
+    "ages": "9-10",
+    "format": "Kid pitch, lead-offs introduced",
+    "bases": "60 ft",
+    "mound": "46 ft",
+    "tryouts": true,
+    "image": "PROG-04"
+  },
+  {
+    "id": "bronco",
+    "name": "Bronco",
+    "ages": "11-12",
+    "format": "Competitive, standings kept",
+    "bases": "70 ft",
+    "mound": "50 ft",
+    "tryouts": true,
+    "image": "PROG-05"
+  },
+  {
+    "id": "pony",
+    "name": "Pony",
+    "ages": "13-14",
+    "format": "Competitive, standings kept",
+    "bases": "80 ft",
+    "mound": "54 ft",
+    "tryouts": true,
+    "image": "PROG-06"
+  },
+  {
+    "id": "colt",
+    "name": "Colt",
+    "ages": "15-16",
+    "format": "Full-size field",
+    "bases": "90 ft",
+    "mound": "60 ft 6 in",
+    "tryouts": true,
+    "image": "PROG-07"
+  },
+  {
+    "id": "palomino",
+    "name": "Palomino",
+    "ages": "17-18",
+    "format": "Full-size field",
+    "bases": "90 ft",
+    "mound": "60 ft 6 in",
+    "tryouts": true,
+    "image": "PROG-08"
+  },
+  {
+    "id": "champions",
+    "name": "Champions",
+    "ages": "4-23",
+    "format": "Adaptive. Every player bats and fields every inning, no score, buddies on the base paths",
+    "bases": null,
+    "mound": null,
+    "tryouts": false,
+    "image": "CHAMP-01"
+  }
+]
