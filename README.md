@@ -5,7 +5,7 @@ Drop this folder into the root of the new Next.js repo. `public/` is served as-i
 ```
 public/
   brand/            logos. Keep originals; export SVG + one-color white for each mark
-    gnbl/           gn-crest.png (150px, LOW RES, replace with SVG), gn-crest.svg, gn-crest-white.svg
+    gnbl/           gn-crest.png (435px, transparent, cut from docs/gn-crest-447-source.png); an SVG would still be sharper. gn-crest-150-original.png is the old file
     tridents/       tridents-crest.png (1254px), tridents-crest.svg, tridents-crest-white.svg, trident-glyph.svg
     botb/           botb-2026.png (1254px), botb-2026.svg; add botb-2027 when it exists
     sponsors/       one file per sponsor, by tier; filename = slug in content/data/sponsors.json

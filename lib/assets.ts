@@ -1,6 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 // Build-time file lookup for shot-ID images, hero videos and brand marks.
 // Runs on the server only; pages are static, so a new file is picked up on
@@ -76,6 +77,20 @@ export function findMark(name: MarkName, white = false): string | null {
 
 /** Absolute file path for a public URL path (for OG image compositing). */
 export const publicFile = (urlPath: string) => path.join(PUBLIC, urlPath);
+
+const versions = new Map<string, string>();
+/**
+ * Adds a short content hash (`?v=…`) so replacing a file under the same name
+ * (a new logo, a better photo) busts the image-optimizer and CDN caches.
+ */
+export function versioned(urlPath: string): string {
+  let v = versions.get(urlPath);
+  if (!v) {
+    v = createHash("sha1").update(fs.readFileSync(publicFile(urlPath))).digest("hex").slice(0, 10);
+    versions.set(urlPath, v);
+  }
+  return `${urlPath}?v=${v}`;
+}
 
 /** Sponsor logo by slug in public/brand/sponsors/{tier}/. */
 export function findSponsorLogo(tier: string, logo: string): string | null {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
-import { findImage } from "@/lib/assets";
+import { findImage, versioned } from "@/lib/assets";
 
 type Aspect = "16/9" | "4/3" | "1/1" | "2/1" | "3/2" | "fill";
 
@@ -42,7 +42,8 @@ export function ImageSlot({
   sizes = "(max-width: 768px) 100vw, 50vw",
   fallback,
 }: Props) {
-  const src = findImage(id);
+  const file = findImage(id);
+  const src = file && versioned(file);
   const box = aspect === "fill" ? "absolute inset-0" : `relative w-full ${ASPECT[aspect]}`;
   const empty = tone === "navy" ? "panel" : "bg-surface";
   const showId = process.env.NEXT_PUBLIC_SHOW_SLOT_IDS === "true";

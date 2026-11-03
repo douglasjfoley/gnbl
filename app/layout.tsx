@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   title: { default: `${site.name} | Virginia Beach youth baseball`, template: `%s | ${site.shortName}` },
   description: `${site.tagline} ${site.positioning} Ages 3 to 18 on our own eight-field complex. PONY affiliated, 501(c)(3).`,
   openGraph: { siteName: site.name, type: "website", locale: "en_US" },
-  icons: { icon: "/brand/gnbl/gn-crest.png" },
 };
 
 export const viewport: Viewport = {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { findMark, type MarkName } from "@/lib/assets";
+import { findMark, versioned, type MarkName } from "@/lib/assets";
 
 const LABEL: Record<MarkName, string> = {
   "gn-crest": "Great Neck Baseball League crest",
@@ -22,9 +22,10 @@ type Props = {
  * or tile until transparent SVGs land.
  */
 export function Mark({ name, size, variant = "color", className = "", alt, priority }: Props) {
-  const src = findMark(name, variant === "white");
+  const file = findMark(name, variant === "white");
+  const src = file && versioned(file);
   if (!src) return null;
-  const isPng = src.endsWith(".png");
+  const isPng = file!.endsWith(".png");
   const shape =
     isPng && name === "tridents-crest"
       ? "rounded-full bg-white"
@@ -43,7 +44,7 @@ export function Mark({ name, size, variant = "color", className = "", alt, prior
         priority={priority}
         sizes={`${size * 2}px`}
         className="object-contain"
-        unoptimized={src.endsWith(".svg")}
+        unoptimized={file!.endsWith(".svg")}
       />
     </span>
   );
