@@ -18,7 +18,7 @@ export default function TeamsPage() {
       <Section>
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {teams.map((t) => (
-            <li key={t.ageGroup} id={t.ageGroup.toLowerCase()} className="scroll-mt-24 rounded-2xl border border-line bg-card p-6">
+            <li key={t.ageGroup} id={t.ageGroup.toLowerCase()} className="scroll-mt-24 card p-6">
               <h2 className="font-display text-4xl font-extrabold text-columbia-lt">{t.ageGroup}</h2>
               <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[15px]">
                 <dt className="font-semibold text-muted">Coach</dt>

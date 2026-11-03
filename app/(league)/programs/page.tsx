@@ -49,7 +49,7 @@ export default function ProgramsPage() {
               We&rsquo;re a volunteer organization, so there will always be coaching gaps. The fix is leverage, not
               headcount.
             </p>
-            <div className="mt-6 overflow-hidden rounded-2xl">
+            <div className="mt-6 overflow-hidden rounded-[22px]">
               <ImageSlot id="PATH-02" alt="A young pitcher mid-windup with the catcher set" aspect="4/3" />
             </div>
           </div>

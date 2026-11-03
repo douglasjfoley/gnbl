@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { StatusChip } from "@/components/blocks";
+import { Media, StatusChip } from "@/components/blocks";
+import { findImage } from "@/lib/assets";
 import { ImageHero } from "@/components/ImageHero";
 import { ImageSlot } from "@/components/ImageSlot";
 import { Button, Card, Eyebrow, Section, SectionHead } from "@/components/ui";
@@ -15,6 +16,16 @@ export default function FacilitiesPage() {
   const fac = getFacilities();
   const dates = getDates();
   const divisions = getAgeDivisions();
+
+  // Photo-only gallery: show a tile once its file exists (all tiles in dev, labelled).
+  const showSlots = process.env.NEXT_PUBLIC_SHOW_SLOT_IDS === "true";
+  const gallery = [
+    ["FAC-02", "The Bronco field from behind home plate"],
+    ["FAC-03", "The batting cages"],
+    ["FAC-05", "Field lights on at dusk"],
+    ["FAC-04", "The concession stand window"],
+    ["FAC-06", "Families walking in from the parking lot"],
+  ].filter(([id]) => showSlots || findImage(id));
 
   const fields = fac.home.fields.map((f) => {
     const div = divisions.find((d) => f.toLowerCase().startsWith(d.name.toLowerCase()));
@@ -39,7 +50,7 @@ export default function FacilitiesPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="min-w-0">
             <SectionHead eyebrow="The complex" title="Eight fields, one address." />
-            <div className="overflow-hidden rounded-2xl border border-line bg-card">
+            <div className="overflow-hidden rounded-[22px] border border-line bg-card">
               <table className="w-full text-left text-[15px]">
                 <thead className="bg-surface font-display text-sm">
                   <tr>
@@ -64,7 +75,7 @@ export default function FacilitiesPage() {
             <SectionHead eyebrow="Amenities" title="Everything a game day needs." />
             <ul className="grid gap-3 sm:grid-cols-2">
               {fac.home.amenities.map((a) => (
-                <li key={a} className="flex items-center gap-3 rounded-xl border border-line bg-card px-4 py-3 font-semibold">
+                <li key={a} className="flex items-center gap-3 card px-4 py-3 font-semibold">
                   <i aria-hidden className="h-2 w-2 shrink-0 rounded-sm bg-red" />
                   {a}
                 </li>
@@ -76,19 +87,15 @@ export default function FacilitiesPage() {
         </div>
       </Section>
 
-      <section aria-label="Photos of the complex" className="wrap grid gap-4 pb-14 sm:grid-cols-2 md:grid-cols-6 md:pb-24 [&>*:nth-child(-n+3)]:md:col-span-2 [&>*:nth-child(n+4)]:md:col-span-3">
-        {[
-          ["FAC-02", "The Bronco field from behind home plate"],
-          ["FAC-03", "The batting cages"],
-          ["FAC-05", "Field lights on at dusk"],
-          ["FAC-04", "The concession stand window"],
-          ["FAC-06", "Families walking in from the parking lot"],
-        ].map(([id, alt]) => (
-          <div key={id} className="overflow-hidden rounded-2xl">
-            <ImageSlot id={id} alt={alt} aspect="4/3" sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
-        ))}
-      </section>
+      {gallery.length > 0 && (
+        <section aria-label="Photos of the complex" className="wrap grid gap-5 pb-[clamp(64px,8vw,112px)] sm:grid-cols-2 lg:grid-cols-3">
+          {gallery.map(([id, alt]) => (
+            <Media key={id}>
+              <ImageSlot id={id} alt={alt} aspect="4/3" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            </Media>
+          ))}
+        </section>
+      )}
 
       <Section variant="cream">
         <div className="grid gap-5 lg:grid-cols-3">

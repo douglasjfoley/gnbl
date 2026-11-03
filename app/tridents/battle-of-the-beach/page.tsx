@@ -42,7 +42,7 @@ export default function BotbPage() {
             ["Mustang", "9 to 10"],
             ["Bronco", "11 to 12"],
           ].map(([n, a]) => (
-            <li key={n} className="rounded-2xl border border-line bg-card p-7">
+            <li key={n} className="card p-7">
               <h3 className="font-display text-3xl font-extrabold">{n}</h3>
               <p className="mt-1 text-muted">Ages {a}</p>
             </li>
@@ -70,7 +70,7 @@ export default function BotbPage() {
             </Button>
           </Card>
           <div className="min-w-0">
-            <div className="overflow-hidden rounded-2xl">
+            <div className="overflow-hidden rounded-[22px]">
               <ImageSlot id="BOTB-02" alt="A team holding a banner at the trophy presentation" aspect="4/3" tone="navy" />
             </div>
             <h2 className="t-h3 mt-6">Past champions</h2>

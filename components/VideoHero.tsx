@@ -21,7 +21,7 @@ export function VideoHero({ id, children, className = "" }: Props) {
 
   return (
     <header
-      className={`relative isolate overflow-hidden bg-navy text-white ${className}`}
+      className={`relative isolate flex min-h-[min(88vh,860px)] flex-col justify-end overflow-hidden bg-navy text-white ${className}`}
       data-slot={id}
       data-slot-filled={hasVideo || v.poster ? "true" : "false"}
     >

@@ -24,20 +24,19 @@ export default function AboutPage() {
       </ImageHero>
 
       <Section>
-        <div className="grid gap-8 text-lg md:grid-cols-3">
-          <p>
-            The sport expects us to be imperfect. Look deeper into any box score and you find the rest of the story: resilience.
-            That is the whole point of the game, and the whole point of who we are: building character, community and camaraderie
-            for the love of the game.
-          </p>
-          <p>
-            GNBL is a 501(c)(3). We are not profit-driven, and we don&rsquo;t compete on those terms. Travel clubs exist to win
-            and attract talent. Our job is different: help kids fall in love with baseball and move them through its stages.
-          </p>
-          <p>
-            Our goal is ascension, not retention. That does not mean we aren&rsquo;t competitive; we play to win. It means
-            when a player is ready for the next step, we are proud to be the launch point.
-          </p>
+        <SectionHead eyebrow="What we believe" title="Three ideas behind everything we do." />
+        <div className="grid gap-5 md:grid-cols-3">
+          {[
+            ["Resilience", "The sport expects us to be imperfect. Look deeper into any box score and you find the rest of the story: resilience. We build character, community and camaraderie for the love of the game."],
+            ["Mission, not profit", "GNBL is a 501(c)(3). We are not profit-driven, and we don't compete on those terms. Travel clubs exist to win and attract talent. Our job is to help kids fall in love with baseball and move them through its stages."],
+            ["Ascension, not retention", "That does not mean we aren't competitive; we play to win. It means when a player is ready for the next step, we are proud to be the launch point."],
+          ].map(([t, b], i) => (
+            <div key={t} className="card p-8">
+              <span className="stat text-[40px] text-accent">{String(i + 1).padStart(2, "0")}</span>
+              <h3 className="t-h3 mt-5">{t}</h3>
+              <p className="t-small mt-3 text-muted">{b}</p>
+            </div>
+          ))}
         </div>
       </Section>
 
@@ -45,7 +44,7 @@ export default function AboutPage() {
         <SplitFeature
           reverse
           media={
-            <div className="overflow-hidden rounded-2xl">
+            <div className="overflow-hidden rounded-[22px]">
               <ImageSlot id="ABOUT-02" alt="A Great Neck youth team from decades ago" aspect="4/3" />
             </div>
           }
@@ -72,7 +71,7 @@ export default function AboutPage() {
         <SectionHead eyebrow="Board of Directors" title="Run by volunteers." lead={`${site.boardMeeting}. Next meeting: ${longDate(dates.nextBoardMeeting)}.`} />
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {board.map((b) => (
-            <li key={b.role} className="rounded-xl border border-line bg-card p-4">
+            <li key={b.role} className="card p-4">
               <p className="eyebrow text-muted">{b.role}</p>
               <p className="mt-1 font-display text-lg font-bold">{b.name || "Open"}</p>
               {b.assistant && <p className="text-sm text-muted">Assistant: {b.assistant}</p>}

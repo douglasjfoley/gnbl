@@ -28,7 +28,7 @@ export default function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="min-w-0">
             <h2 className="t-h3 mb-4">Email by topic</h2>
-            <ul className="divide-y divide-line rounded-2xl border border-line bg-card">
+            <ul className="divide-y divide-line card">
               {Object.entries(site.email).map(([k, v]) => (
                 <li key={k} className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-5 py-4">
                   <span className="font-semibold">{LABELS[k] ?? k}</span>
@@ -41,7 +41,7 @@ export default function ContactPage() {
               {board
                 .filter((b) => /Director/.test(b.role) && /Fawn|Pinto|Mustang|Bronco|Pony|Champions|Tridents/.test(b.role))
                 .map((b) => (
-                  <li key={b.role} className="rounded-xl border border-line bg-card px-4 py-3 text-[15px]">
+                  <li key={b.role} className="card px-4 py-3 text-[15px]">
                     <b>{b.role}</b>
                     <a href={`mailto:${b.email}`} className="block break-all text-accent underline-offset-4 hover:underline">{b.email}</a>
                   </li>

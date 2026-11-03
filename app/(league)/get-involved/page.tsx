@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { sponsorInquiry } from "@/app/actions";
-import { Chips, SponsorGrid } from "@/components/blocks";
-import { ImageSlot } from "@/components/ImageSlot";
+import { Chips, Media, SplitFeature, SponsorGrid } from "@/components/blocks";
+import { ImageSlot, PanelStat } from "@/components/ImageSlot";
 import { InquiryForm } from "@/components/InquiryForm";
-import { Button, Card, Eyebrow, PageHeader, Section, SectionHead } from "@/components/ui";
+import { Button, Card, Eyebrow, PageHeader, Section, SectionHead, Steps } from "@/components/ui";
 import { getSite, getSponsors } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Get Involved",
-  description: "Volunteer as a coach, team parent, Champions buddy or field crew, or sponsor Great Neck Baseball. Every dollar is tax-deductible.",
+  description: "Volunteer as a coach, team parent, Champions buddy or field crew, or sponsor Great Neck Baseball League. Every dollar is tax-deductible.",
 };
 
 const ROLES = ["Coach", "Assistant coach", "Team parent", "Champions buddy", "Field maintenance", "Concessions", "Fundraising", "Tradesmen"];
@@ -56,50 +56,39 @@ export default function GetInvolvedPage() {
         <p>No experience required. Volunteers coach, keep score, rake fields, run the grill and walk the base paths with our Champions.</p>
       </PageHeader>
 
-      <Section id="volunteer" className="scroll-mt-16">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
-          <div className="min-w-0">
-            <div className="overflow-hidden rounded-2xl">
+      <Section id="volunteer">
+        <SplitFeature
+          media={
+            <Media>
               <ImageSlot id="INV-01" alt="A parent volunteer raking the infield at sunrise" aspect="4/3" />
-            </div>
+            </Media>
+          }
+        >
+          <Eyebrow>Volunteer</Eyebrow>
+          <h2 className="t-h2 mt-4">Three steps to the field.</h2>
+          <div className="mt-6">
+            <Chips items={ROLES} />
           </div>
-          <div className="min-w-0">
-            <Eyebrow className="mb-3">Volunteer</Eyebrow>
-            <h2 className="t-h2">Three steps to the field.</h2>
-            <div className="mt-5">
-              <Chips items={ROLES} />
-            </div>
-            <ol className="mt-7 space-y-5">
-              {steps.map((s, i) => (
-                <li key={s.t} className="grid grid-cols-[40px_1fr] gap-3">
-                  <span className="grid h-10 w-10 place-items-center rounded-full bg-red font-display font-extrabold text-white">{i + 1}</span>
-                  <div>
-                    <b className="font-display">{s.t}</b>
-                    <p className="text-[15px] text-muted">{s.d}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Button href={l.volunteerRegistration}>Volunteer with us</Button>
-              <Button href={`mailto:${site.email.volunteer}`} variant="secondary">Email the volunteer director</Button>
-            </div>
+          <Steps className="mt-9" items={steps.map((s) => ({ title: s.t, body: s.d }))} />
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Button href={l.volunteerRegistration} arrow>Volunteer with us</Button>
+            <Button href={`mailto:${site.email.volunteer}`} variant="secondary">Email the volunteer director</Button>
           </div>
-        </div>
+        </SplitFeature>
       </Section>
 
-      <Section id="sponsor" variant="cream" className="scroll-mt-16">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
-          <div className="min-w-0">
-            <Eyebrow className="mb-3">Sponsor</Eyebrow>
-            <h2 className="t-h2">Put your business on the fence where the whole neighborhood sees it.</h2>
-            <p className="mt-5 text-lg">
+      <Section id="sponsor" variant="cream">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="min-w-0 lg:col-span-7">
+            <Eyebrow>Sponsor</Eyebrow>
+            <h2 className="t-h2 mt-4">Put your business on the fence where the whole neighborhood sees it.</h2>
+            <p className="t-lead mt-6 text-muted">
               Sponsorship keeps registration affordable and the fields in shape. GNBL is a 501(c)(3), so every dollar is tax-deductible.
               Pay by Venmo, by check to P.O. Box 3004, Virginia Beach, VA 23454, or in person at the complex.
             </p>
-            <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+            <ul className="mt-9 grid gap-4 sm:grid-cols-2">
               {sponsors.tiers.map((t) => (
-                <li key={t.id} className="rounded-2xl border border-line bg-card p-5">
+                <li key={t.id} className="card p-6">
                   <h3 className="font-display text-lg font-bold">{t.name}</h3>
                   {t.benefits.length ? (
                     <ul className="mt-2 list-disc pl-5 text-[15px] text-muted">
@@ -112,14 +101,14 @@ export default function GetInvolvedPage() {
               ))}
             </ul>
           </div>
-          <div className="min-w-0 overflow-hidden rounded-2xl self-start">
-            <ImageSlot id="INV-02" alt="Sponsor banners along the outfield fence" aspect="4/3" />
-          </div>
+          <Media className="self-start lg:col-span-5">
+            <ImageSlot id="INV-02" alt="Sponsor banners along the outfield fence" aspect="4/3" fallback={<PanelStat value={String(sponsors.sponsors.length)} label="Local businesses behind the league" />} />
+          </Media>
         </div>
       </Section>
 
-      <Section>
-        <SectionHead eyebrow="Thank you" title="Our sponsors." />
+      <Section id="sponsors">
+        <SectionHead eyebrow="Thank you" title="Our sponsors." lead="Every one of these businesses helps keep registration affordable and the fields in shape." />
         <SponsorGrid data={sponsors} />
       </Section>
 

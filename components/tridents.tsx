@@ -12,7 +12,7 @@ export function Pillars() {
   return (
     <ul className="grid gap-4 md:grid-cols-3">
       {PILLARS.map(([t, s]) => (
-        <li key={t} className="rounded-2xl border border-line bg-card p-6 md:p-7">
+        <li key={t} className="card p-7 md:p-8">
           <span aria-hidden className="mb-4 block h-1 w-10 rounded bg-columbia" />
           <h3 className="t-h3">{t}</h3>
           <p className="mt-2 text-muted">{s}</p>

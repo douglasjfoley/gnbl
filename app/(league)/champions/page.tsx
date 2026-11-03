@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SplitFeature } from "@/components/blocks";
 import { ImageHero } from "@/components/ImageHero";
-import { ImageSlot } from "@/components/ImageSlot";
+import { ImageSlot, PanelStat } from "@/components/ImageSlot";
 import { Button, Card, Eyebrow, Section } from "@/components/ui";
 import { getBoard, getSite } from "@/lib/content";
 
@@ -46,7 +46,7 @@ export default function ChampionsPage() {
             </p>
             <ol className="mt-6 space-y-3">
               {HOW.map((h, i) => (
-                <li key={h} className="flex items-center gap-4 rounded-xl border border-line bg-card px-5 py-4 font-display text-lg font-bold">
+                <li key={h} className="flex items-center gap-4 card px-5 py-4 font-display text-lg font-bold">
                   <span className="text-accent tabular-nums">{i + 1}</span>
                   {h}
                 </li>
@@ -54,8 +54,8 @@ export default function ChampionsPage() {
             </ol>
           </div>
           <div id="buddies" className="min-w-0 scroll-mt-24">
-            <div className="overflow-hidden rounded-2xl">
-              <ImageSlot id="CHAMP-02" alt="A player swinging a bat while a buddy holds the tee steady" aspect="4/3" />
+            <div className="overflow-hidden rounded-[22px]">
+              <ImageSlot id="CHAMP-02" alt="A player swinging a bat while a buddy holds the tee steady" aspect="4/3" fallback={<PanelStat value="1 hr" label="Every Saturday, no score kept" />} />
             </div>
             <h2 className="t-h3 mt-6">The buddy program</h2>
             <p className="mt-3 text-muted">
@@ -74,8 +74,8 @@ export default function ChampionsPage() {
         <SplitFeature
           reverse
           media={
-            <div className="overflow-hidden rounded-2xl">
-              <ImageSlot id="CHAMP-03" alt="Two Tridents players high-fiving a young Champions player" aspect="4/3" />
+            <div className="overflow-hidden rounded-[22px]">
+              <ImageSlot id="CHAMP-03" alt="Two Tridents players high-fiving a young Champions player" aspect="4/3" fallback={<PanelStat value="52" label="Saturdays a year with a Tridents team" />} />
             </div>
           }
         >

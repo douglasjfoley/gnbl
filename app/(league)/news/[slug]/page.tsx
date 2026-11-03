@@ -29,7 +29,7 @@ export default async function PostPage({ params }: Params) {
       </PageHeader>
       <Section>
         {post.image && (
-          <div className="mb-10 max-w-3xl overflow-hidden rounded-2xl">
+          <div className="mb-10 max-w-3xl overflow-hidden rounded-[22px]">
             <ImageSlot id={post.image} alt="" aspect="16/9" />
           </div>
         )}

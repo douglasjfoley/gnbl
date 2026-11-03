@@ -8,7 +8,7 @@ export type Field =
   | { name: string; label: string; type: "select"; options: string[]; required?: boolean };
 
 const input =
-  "mt-1.5 block w-full rounded-lg border border-line bg-card px-3 py-2.5 text-fg placeholder:text-muted";
+  "mt-2 block w-full rounded-xl border border-line bg-bg px-4 py-3 text-fg placeholder:text-muted transition-colors focus:border-primary";
 
 export function InquiryForm({
   action,
@@ -26,7 +26,7 @@ export function InquiryForm({
 
   if (state?.ok) {
     return (
-      <p role="status" className="rounded-2xl border border-line bg-card p-6 font-display text-lg font-bold">
+      <p role="status" className="card p-7 font-display text-lg font-bold">
         {state.message}
       </p>
     );

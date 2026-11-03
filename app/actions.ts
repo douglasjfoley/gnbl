@@ -20,7 +20,7 @@ async function send(to: string, subject: string, fields: Record<string, string>,
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      from: process.env.RESEND_FROM ?? "Great Neck Baseball <website@gnbaseball.org>",
+      from: process.env.RESEND_FROM ?? "Great Neck Baseball League <website@gnbaseball.org>",
       to: [to],
       reply_to: replyTo,
       subject,
